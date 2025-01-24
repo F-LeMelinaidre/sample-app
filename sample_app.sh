@@ -8,5 +8,5 @@ echo "COPY ./sample_app.py ." >> ./Dockerfile
 echo "EXPOSE 8080" >> ./Dockerfile
 echo "CMD python3 ./sample_app.py" >> ./Dockerfile
 docker build -t sampleapp .
-docker run -t -d -p 8080:8080 --name samplerunning sampleapp
+docker run -t -d -p 5050:5050 --name samplerunning sampleapp
 docker ps -a
